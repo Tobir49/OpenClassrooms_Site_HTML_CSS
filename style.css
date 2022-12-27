@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+*{
+    max-width: 1400px;
+    font-family: 'Raleway', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+
+#titre{
+    font-weight:bolder;
+    font-size: 2em;
+}
+
+#sous_titre{
+    
+}
+
+.cartes_hébergements{
+    background-color: #F2F2F2;
+    padding:1em;
+    border-radius: 1.5 em;
+}
+
+a{
+    text-decoration: none;
+}
+
+#filtres{
+    padding: 10px;
+    text-align: center;
+}
+.filtre{
+    border:2px, solid, #F2F2F2;
+    margin-left: 10px;
+    margin-right: 10px; 
+    display:inline-block;
+    text-align: left; 
+}
