@@ -5,6 +5,18 @@
     font-family: 'Raleway', sans-serif;
 }
 
+.navigation_theme{
+    display:flex;
+    justify-content: flex-end;
+    padding:3px;
+}
+.navigation_filtre{
+    display: flex;
+    justify-content:space-around;
+}
+.navigation_formulaire{
+    display: flex;
+}
 ul{
     list-style-type: none;
 }
@@ -14,28 +26,13 @@ ul{
     font-size: 2em;
 }
 
-#sous_titre{
-    
-}
-
 .cartes_hébergements{
     background-color: #F2F2F2;
     padding:1em;
-    border-radius: 1.5 em;
+    border-radius: 1.5em;
 }
 
 a{
     text-decoration: none;
 }
 
-#filtres{
-    padding: 10px;
-    text-align: center;
-}
-.filtre{
-    border:2px, solid, #F2F2F2;
-    margin-left: 10px;
-    margin-right: 10px; 
-    display:inline-block;
-    text-align: left; 
-}
