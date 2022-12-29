@@ -5,34 +5,59 @@
     font-family: 'Raleway', sans-serif;
 }
 
-.navigation_theme{
-    display:flex;
-    justify-content: flex-end;
-    padding:3px;
-}
-.navigation_filtre{
-    display: flex;
-    justify-content:space-around;
-}
-.navigation_formulaire{
-    display: flex;
-}
-ul{
-    list-style-type: none;
-}
-
-#titre{
-    font-weight:bolder;
-    font-size: 2em;
-}
-
-.cartes_hébergements{
-    background-color: #F2F2F2;
-    padding:1em;
-    border-radius: 1.5em;
-}
-
 a{
     text-decoration: none;
 }
 
+h2 h3{
+    font-weight: bold;
+}
+
+#haut_page{
+    display:flex;
+    justify-content:space-between;
+}
+
+#info{
+    color:#D9D9D9;
+}
+
+i{
+    color:#0065FC;
+}
+
+/*ARTICLE*/
+
+.card_unique{
+    width: 250px;
+    margin: 0px auto; 
+    background-color: white; 
+    box-shadow: 0px 5px 20px #999;
+    border:3px solid white;
+    border-radius:1.5em;
+    margin-bottom:2em
+}
+
+.img{
+    width:250px;
+    height: 150px;
+    border-radius: 1.5em;
+}
+
+.cards{
+    display :flex;
+    flex-wrap: wrap;
+    margin: 1em;
+}
+
+.article{
+    background-color: #D9D9D9;
+    border-radius: 1em;
+    width:60%;
+    padding: 1.5em;
+}
+
+.container{
+    width: 250px;
+    margin: 0px auto;
+}
