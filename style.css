@@ -62,15 +62,18 @@ header {
 }
 
 #logo {
-    width: 5%;
-    height: 5%;
+    width: 4.5em;
+    height: 1.5em;
 }
+
+
+/*Nav*/
 
 nav>ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 0em;
+    margin-top: 0.2em;
 }
 
 .nav_links {
@@ -80,9 +83,10 @@ nav>ul {
 
 .nav_links:hover {
     color: #0065FC;
-    border-top: 0.2em solid #0065FC;
+    border-top: 0.1em solid #0065FC;
     box-sizing: content-box;
-    padding: 2em;
+    padding: 1.7em;
+    margin: 0em 1.2em 0em 1.5em;
 }
 
 
@@ -126,7 +130,7 @@ nav>ul {
     cursor: pointer;
 }
 
-#search_icon {
+#hidden_icon {
     visibility: hidden;
 }
 
@@ -226,16 +230,20 @@ article {
 }
 
 .hostel_card_text {
-    margin: 0.5em 0em 0em -1.5em;
+    margin: -0.5em 0em 0em -2em;
 }
 
 .title_card {
-    font-size: 90%;
-    font-weight: 700;
+    font-size: 93%;
+    margin-bottom: -1.2em;
 }
 
 .hostel_cost {
     font-size: 96%;
+}
+
+.euro {
+    font-weight: 700;
 }
 
 .rank {
@@ -248,7 +256,7 @@ article {
 }
 
 .hostel_rank {
-    margin: 0em 0em 0em -2em;
+    margin: 0.6em 0em 0em -2.7em;
 }
 
 #hostels_extra {
@@ -301,10 +309,13 @@ aside {
 
 .popular_text {
     margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .popular_rank {
-    margin: 4.5em 0em 0em -3em;
+    margin: 0em 0em 0.2em -2.5em;
 }
 
 
@@ -367,4 +378,156 @@ footer {
 
 .footer_links>a {
     margin-top: 1em;
+}
+
+
+/*Code responsive pour les tablettes*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .title_card {
+        font-size: 80%;
+    }
+    p {
+        font-size: 80%;
+    }
+    /*Main*/
+    /*Texte du main*/
+    h1 {
+        font-size: 100%;
+    }
+    /*Formulaire du main*/
+    form {
+        width: 9em;
+        margin-right: 1.3em;
+    }
+    #search>#research {
+        width: 7em;
+    }
+    /*Filtres du main*/
+    #main_filtre {
+        width: 90%;
+    }
+    /*Fin du main*/
+    #indication_icone {
+        width: 1.3em;
+        height: 1.3em;
+        padding: 0em 0.4em 0.4em 0em;
+        margin-right: 0.6em;
+        margin-top: 0.7em;
+    }
+    /*Article et Aside*/
+    #hostels {
+        display: flex;
+        flex-direction: column;
+    }
+    /*Article*/
+    .only_hostel_card {
+        height: 11em;
+    }
+    .hostel_cost {
+        font-size: 80%;
+    }
+    /*Aside*/
+    aside {
+        margin: -0.2em 0em 0em 0em;
+        margin-top: 2em;
+    }
+    #all_popular_hostels {
+        display: flex;
+        justify-content: center;
+    }
+    .only_popular_hostel {
+        width: 30%;
+        height: 6em;
+        padding-right: 1em;
+        margin: 0em 0.3em 1.3em 0.3em;
+    }
+    .popular_hostel_image {
+        width: 5em;
+        height: 7em;
+    }
+    .popular_text {
+        margin: -0.3em 0em 0em 0.5em;
+    }
+    .popular_hostel_cost {
+        margin-top: -0.4em;
+    }
+    /*Section*/
+    .only_activity_card {
+        height: 13em;
+    }
+    .activity_image {
+        height: 12em;
+    }
+    /*Footer*/
+    #footer_description {
+        height: 6.3em;
+        width: 80%;
+    }
+    .footer_text {
+        margin: -1.5em 0em 0em -1.5em;
+    }
+}
+
+
+/*Code responsive pour les smartphones*/
+
+@media screen and (max-width: 767px) {
+    body {
+        margin: 0em 0.8em 0em 0.8em;
+    }
+    /*Header*/
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    #logo {
+        width: 5.5em;
+        height: 2.2em;
+        margin: 1em 0em 2em 11em;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        border-bottom: solid 0.2em #F2F2F2;
+    }
+    /*Main*/
+    /*Formulaire du main*/
+    #research {
+        visibility: hidden;
+    }
+    #hidden_icon {
+        visibility: visible;
+        background-color: #0065FC;
+        border: 0em solid #0065FC;
+        border-radius: 0em 1em 1em 0em;
+        font-weight: 700;
+        width: 8em;
+        height: 3em;
+    }
+    #hidden_icon:hover {
+        cursor: pointer;
+    }
+    #search_icon {
+        color: white;
+    }
+    /*Filtre main*/
+    #main_filtre {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    /*Article et Aside*/
+    /*Article*/
+    #hostels {
+        flex-direction: column;
+    }
+    article {
+        margin: 0em -0.8em 0em -0.8em;
+    }
+    /*Aside*/
+    aside {
+        margin: 0em -1em 0em -1em;
+    }
 }
