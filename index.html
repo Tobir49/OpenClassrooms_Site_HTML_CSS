@@ -28,7 +28,7 @@
     <main>
         <!-- Dans le <main> est présent : Le titre <h1>, le formulaire, et les filtres -->
 
-        <div id="titles_main">
+        <div>
             <h1>Trouver votre hébergement pour des vacances de rêves</h1>
             <p>En plein centre-ville ou en pleine nature</p>
         </div>
@@ -43,13 +43,13 @@
                 <button type="button" id="hidden_icon"><i id="search_icon" class="fa-solid fa-magnifying-glass"></i></button>
             </div>
         </div>
-
+        <br>
         <div id="end_main">
             <div>
-                <ul id="main_filtre">
-                    <li>
-                        <h2 id="title_filtre">Filtres</h2>
-                    </li>
+                <h2 id="title_filtre">Filtres</h2>
+            </div>
+            <div>
+                <ul id="ul_filtre">
                     <li>
                         <h2 class="filtre"><i class="fa-solid fa-money-bill-wave"></i><a href="#" class="type_filtre">Économique</a></h2>
                     </li>
@@ -64,17 +64,17 @@
                     </li>
                 </ul>
             </div>
+        </div>
 
-            <div>
-                <ul id="indication_main">
-                    <li>
-                        <p id="indication_icone"><i id="info_bulle" class="fa-solid fa-info"></i></p>
-                    </li>
-                    <li>
-                        <p>Plus de 500 logements sont disponibles dans cette ville</p>
-                    </li>
-                </ul>
-            </div>
+        <div>
+            <ul id="indication_main">
+                <li>
+                    <p id="indication_icone"><i id="info_bulle" class="fa-solid fa-info"></i></p>
+                </li>
+                <li>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </li>
+            </ul>
         </div>
 
     </main>
@@ -86,8 +86,8 @@
 
         <article>
             <div id="hostel_article" class="clear_background">
-                <div id="hostel_article_title">
-                    <h2 class="titles_article_aside">Hébergements à Marseille</h2>
+                <div>
+                    <h2>Hébergements à Marseille</h2>
                 </div>
 
                 <div id="all_hostel_cards">
@@ -238,7 +238,7 @@
             <!-- Dans le <aside>, il y a les cartes des hôtels populaires -->
 
             <div id="title_popular_hostels">
-                <h2 class="titles_article_aside">Les plus populaires</h2>
+                <h2>Les plus populaires</h2>
                 <i class="fa-solid fa-chart-line" id="logo_popular"></i>
             </div>
 
@@ -261,11 +261,11 @@
                                 </div>
                                 <div class="popular_rank">
                                     <ul class="rank">
-                                        <li><i class=" fa-solid fa-star "></i></li>
-                                        <li><i class="fa-solid fa-star "></i></li>
-                                        <li><i class="fa-solid fa-star "></i></li>
-                                        <li><i class="fa-solid fa-star "></i></li>
-                                        <li><i class="fa-solid fa-star star_empty "></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star star_empty"></i></li>
                                     </ul>
                                 </div>
                             </li>
@@ -275,25 +275,25 @@
                 </div>
 
                 <div class="only_popular_hostel white_background">
-                    <a href="# ">
-                        <ul class="popular_flex ">
+                    <a href="#">
+                        <ul class="popular_flex">
                             <li>
                                 <div>
-                                    <img src="assets/images_booki/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg " class="popular_hostel_image " alt="Chambres d 'hôtes Au coeur de l'eau ">
+                                    <img src="assets/images_booki/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" class="popular_hostel_image" alt="Chambres d 'hôtes Au coeur de l'eau">
                                 </div>
                             </li>
                             <li class="popular_text">
                                 <div>
                                     <h3 class="title_card">Chambres d'hôtes Au coeur de l'eau</h3>
-                                    <p class="popular_hostel_cost ">Nuit à partir de 71<span class="euro">€</span></p>
+                                    <p class="popular_hostel_cost">Nuit à partir de 71<span class="euro">€</span></p>
                                 </div>
                                 <div class="popular_rank">
                                     <ul class="rank">
-                                        <li><i class=" fa-solid fa-star "></i></li>
-                                        <li><i class="fa-solid fa-star "></i></li>
-                                        <li><i class="fa-solid fa-star "></i></li>
-                                        <li><i class="fa-solid fa-star "></i></li>
-                                        <li><i class="fa-solid fa-star star_empty "></i></li>
+                                        <li><i class=" fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star star_empty"></i></li>
                                     </ul>
                                 </div>
                             </li>
@@ -302,25 +302,25 @@
                 </div>
 
                 <div class="only_popular_hostel white_background">
-                    <a href="# ">
-                        <ul class="popular_flex ">
+                    <a href="#">
+                        <ul class="popular_flex">
                             <li>
                                 <div>
-                                    <img src="assets/images_booki/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg " class="popular_hostel_image " alt="Hôtel Bleu et Blanc ">
+                                    <img src="assets/images_booki/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="popular_hostel_image" alt="Hôtel Bleu et Blanc">
                                 </div>
                             </li>
                             <li class="popular_text">
                                 <div>
                                     <h3 class="title_card">Hôtel Bleu et Blanc</h3>
-                                    <p class="popular_hostel_cost ">Nuit à partir de 68 <span class="euro">€</span></p>
+                                    <p class="popular_hostel_cost">Nuit à partir de 68 <span class="euro">€</span></p>
                                 </div>
                                 <div class="popular_rank">
                                     <ul class="rank">
-                                        <li><i class=" fa-solid fa-star "></i></li>
-                                        <li><i class="fa-solid fa-star "></i></li>
-                                        <li><i class="fa-solid fa-star "></i></li>
-                                        <li><i class="fa-solid fa-star "></i></li>
-                                        <li><i class="fa-solid fa-star star_empty "></i></li>
+                                        <li><i class=" fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star star_empty"></i></li>
                                     </ul>
                                 </div>
                             </li>
@@ -346,18 +346,18 @@
 
 
             <div class="only_activity_card white_background border_cards">
-                <!-- La classe "only_activity_card " sert de référence pour les card d'activités -->
-                <a href="# ">
-                    <img src="assets/images_booki/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux-Port " class="activity_image">
-                    <div class="activity_card_text ">
+                <!-- La classe "only_activity_card" sert de référence pour les card d'activités -->
+                <a href="#">
+                    <img src="assets/images_booki/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux-Port" class="activity_image">
+                    <div class="activity_card_text">
                         <h3 class="activity_title">Vieux-Port</h3>
                     </div>
                 </a>
             </div>
 
             <div class="only_activity_card white_background">
-                <a href="# ">
-                    <img src="assets/images_booki/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues " class="activity_image">
+                <a href="#">
+                    <img src="assets/images_booki/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" class="activity_image">
                     <div class="activity_card_text">
                         <h3 class="activity_title">Fort de Pomègues</h3>
                     </div>
@@ -365,19 +365,19 @@
             </div>
 
             <div class="only_activity_card white_background">
-                <a href="# ">
-                    <img src="assets/images_booki/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc national des Calanques " class="activity_image">
-                    <div class="activity_card_text ">
+                <a href="#">
+                    <img src="assets/images_booki/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc national des Calanques" class="activity_image">
+                    <div class="activity_card_text">
                         <h3 class="activity_title">Parc national des Calanques</h3>
                     </div>
                 </a>
             </div>
 
             <div class="only_activity_card white_background">
-                <a href="# ">
-                    <img src="assets/images_booki/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg " alt="Notre-Dame-de-la-Garde " class="activity_image">
+                <a href="#">
+                    <img src="assets/images_booki/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" class="activity_image">
                     <div class="activity_card_text">
-                        <h3 class="activity_title ">Notre-Dame-de-la-Garde</h3>
+                        <h3 class="activity_title">Notre-Dame-de-la-Garde</h3>
                     </div>
                 </a>
             </div>
@@ -394,25 +394,25 @@
             <div class="footer_text">
                 <h2>À propos</h2>
                 <div class="footer_links">
-                    <a href="# ">Fonctionnement du site</a>
-                    <a href="# ">Conditions générales</a>
-                    <a href="# ">Données et confidentialité</a>
+                    <a href="#">Fonctionnement du site</a>
+                    <a href="#">Conditions générales</a>
+                    <a href="#">Données et confidentialité</a>
                 </div>
             </div>
 
             <div class="footer_text">
                 <h2>Nos hébergements</h2>
                 <div class="footer_links">
-                    <a href="# ">Charte qualité</a>
-                    <a href="# ">Proposer votre hôtel</a>
+                    <a href="#">Charte qualité</a>
+                    <a href="#">Proposer votre hôtel</a>
                 </div>
             </div>
 
             <div class="footer_text">
                 <h2>Assistance</h2>
                 <div class="footer_links">
-                    <a href="# ">Centre d'aide</a>
-                    <a href="# ">Nous contacter</a>
+                    <a href="#">Centre d'aide</a>
+                    <a href="#">Nous contacter</a>
                 </div>
             </div>
         </div>

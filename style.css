@@ -139,22 +139,23 @@ nav>ul {
 
 #end_main {
     margin-left: -3em;
-}
-
-#main_filtre {
-    width: 67%;
     display: flex;
-    justify-content: space-between;
 }
 
 #title_filtre {
-    padding: 0.8em;
+    margin-left: 3em;
+}
+
+#ul_filtre {
+    display: flex;
+    margin-top: -0.8em;
 }
 
 .filtre {
     border: 2px solid #D9D9D9;
     border-radius: 2em;
     padding: 0.7em;
+    margin-right: 2em;
 }
 
 .filtre:hover {
@@ -171,6 +172,7 @@ nav>ul {
 
 #indication_main {
     display: flex;
+    margin: -1em 0em 0em -2.5em;
 }
 
 #indication_icone {
@@ -234,7 +236,7 @@ article {
 }
 
 .title_card {
-    font-size: 93%;
+    font-size: 85%;
     margin-bottom: -1.2em;
 }
 
@@ -314,8 +316,12 @@ aside {
     justify-content: space-between;
 }
 
+.popular_hostel_cost {
+    margin-top: 1.8em;
+}
+
 .popular_rank {
-    margin: 0em 0em 0.2em -2.5em;
+    margin: 0em 0em 0.5em -2.5em;
 }
 
 
@@ -347,13 +353,14 @@ aside {
 }
 
 .activity_card_text {
-    margin: 0.4em 0em 0em 0.4em;
+    display: flex;
+    align-items: center;
 }
 
 .activity_title {
-    margin-top: 0em;
-    padding: 0.2em 0.7em 1em 1em;
+    align-self: center;
     font-size: 98%;
+    padding-left: 1em;
 }
 
 
@@ -404,8 +411,12 @@ footer {
         width: 7em;
     }
     /*Filtres du main*/
-    #main_filtre {
-        width: 90%;
+    #title_filtre {
+        margin-right: -1em;
+    }
+    .filtre {
+        white-space: nowrap;
+        margin-right: 1em;
     }
     /*Fin du main*/
     #indication_icone {
@@ -450,7 +461,7 @@ footer {
         margin: -0.3em 0em 0em 0.5em;
     }
     .popular_hostel_cost {
-        margin-top: -0.4em;
+        margin-top: 2em;
     }
     /*Section*/
     .only_activity_card {
@@ -474,7 +485,7 @@ footer {
 
 @media screen and (max-width: 767px) {
     body {
-        margin: 0em 0.8em 0em 0.8em;
+        margin: 0em 0em 0em 0em;
     }
     /*Header*/
     header {
@@ -482,19 +493,34 @@ footer {
         flex-direction: column;
     }
     #logo {
-        width: 5.5em;
-        height: 2.2em;
-        margin: 1em 0em 2em 11em;
+        align-self: center;
+        width: 20%;
+        height: 10%;
+        margin: 1em 0em 2em 1em;
     }
     nav {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
+        margin-left: -1.5em;
         border-bottom: solid 0.2em #F2F2F2;
+    }
+    .nav_links:hover {
+        border-top: none;
     }
     /*Main*/
     /*Formulaire du main*/
+    #form {
+        justify-content: center;
+    }
+    #search {
+        display: flex;
+    }
     #research {
-        visibility: hidden;
+        display: none;
+        order: 2;
+    }
+    #place_icon {
+        width: 3e2.5;
     }
     #hidden_icon {
         visibility: visible;
@@ -502,8 +528,9 @@ footer {
         border: 0em solid #0065FC;
         border-radius: 0em 1em 1em 0em;
         font-weight: 700;
-        width: 8em;
+        width: 4em;
         height: 3em;
+        order: 1;
     }
     #hidden_icon:hover {
         cursor: pointer;
@@ -512,22 +539,64 @@ footer {
         color: white;
     }
     /*Filtre main*/
-    #main_filtre {
-        width: 100%;
+    #end_main {
+        flex-direction: column;
+    }
+    #ul_filtre {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        margin-left: 1em;
+    }
+    .filtre {
+        white-space: nowrap;
+        font-size: 90%;
+        margin-right: 0.5em;
+    }
+    /*Fin du main*/
+    #indication_main {
+        width: 100%;
     }
     /*Article et Aside*/
     /*Article*/
     #hostels {
+        margin-right: -1em;
         flex-direction: column;
     }
     article {
         margin: 0em -0.8em 0em -0.8em;
+        order: 2;
+    }
+    .only_hostel_card {
+        width: 90%;
+    }
+    article>.clear_background {
+        background-color: white;
     }
     /*Aside*/
     aside {
         margin: 0em -1em 0em -1em;
+        order: 1;
+        border-radius: 0em;
+    }
+    /*Section*/
+    #activities {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .only_activity_card {
+        width: 90%;
+    }
+    .activity_image {
+        height: 9em;
+    }
+    /*Footer*/
+    #footer_description {
+        height: 20em;
+        width: 100%;
+        flex-direction: column;
+    }
+    .footer_text {
+        margin: -1.5em 0em 0em -1.5em;
     }
 }
