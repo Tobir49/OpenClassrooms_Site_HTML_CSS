@@ -106,7 +106,7 @@ nav>ul {
 
 /*Main: formulaire*/
 
-#form {
+#all_form {
     display: flex;
     height: 2.5em;
 }
@@ -400,6 +400,10 @@ footer {
     p {
         font-size: 80%;
     }
+    /*Header*/
+    header {
+        margin-top: 1.5em;
+    }
     /*Main*/
     /*Texte du main*/
     h1 {
@@ -503,6 +507,7 @@ footer {
     header {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     #logo {
         align-self: center;
@@ -510,19 +515,23 @@ footer {
         height: 10%;
         margin: 1em 0em 1em 1.8em;
     }
-    nav {
-        display: flex;
-        justify-content: space-evenly;
-        margin: 0em 0em 0em -2em;
+    nav>ul {
         border-bottom: 0.2em solid #F2F2F2;
-        box-sizing: content-box;
-        padding: 0.6em;
+        padding: 0.6em 0em 0.6em 0em;
+    }
+    nav>ul>li {
+        width: 50%;
     }
     .nav_links:hover {
         border-top: none;
+        border-bottom: 0.2em solid #0065FC;
     }
     /*Main*/
     /*Formulaire du main*/
+    #all_form {
+        justify-content: center;
+        margin-right: -2em;
+    }
     #search {
         display: flex;
     }
@@ -581,7 +590,7 @@ footer {
         flex-direction: column;
     }
     article {
-        margin: 0em -0.8em 0em -0.8em;
+        margin: 0em -0.8em -2em -0.8em;
         order: 2;
     }
     #hostels_title_mobile {
@@ -589,13 +598,13 @@ footer {
     }
     .only_hostel_card {
         width: 85%;
-        margin: 0em 0em 0.8em 0.5em;
+        margin: 0em 0em 0.8em 1em;
     }
     article>.clear_background {
         background-color: white;
     }
     #hostels_extra {
-        margin-left: 1.2em;
+        display: none;
     }
     /*Aside*/
     aside {
@@ -604,7 +613,7 @@ footer {
         border-radius: 0em;
     }
     .only_popular_hostel {
-        width: 90%;
+        width: 92%;
         height: 7.5em;
         margin-left: 0.5em;
     }
@@ -621,15 +630,15 @@ footer {
         align-items: center;
     }
     .only_activity_card {
-        width: 90%;
-        margin: 0em 0em 0.8em 0.5em;
+        width: 88%;
+        margin: 0em 0em 0.8em 0.8em;
     }
     .activity_image {
         height: 9em;
     }
     /*Footer*/
     footer {
-        margin-top: 1.5em;
+        margin-top: 3em;
     }
     #footer_description {
         height: 20em;
